@@ -12,8 +12,10 @@
 }
 
 .nav {
-    background: rgba(50, 50, 50, 1);
     display: flex;
+}
+
+.nav-bar {
 }
 
 .link {
