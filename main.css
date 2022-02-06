@@ -11,19 +11,17 @@
     src: url(font/bold.ttf);
 }
 
-.section {
-    outline: solid 1px;
+.nav {
+    background: rgba(50, 50, 50, 1);
+    display: flex;
 }
 
-.section a {
+.link {
     text-decoration: none;
 }
 
-.section a:hover {
-    transform: scale(1.5);
-}
-
 .rainbow {
+    text-align: center;
     background: white;
     -webkit-background-clip: text;
     -moz-background-clip: text;
