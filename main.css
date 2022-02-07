@@ -44,7 +44,7 @@ nav h1 {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     animation: hueshift 5s linear infinite;;
-    text-shadow: 1px 1px 8px #ff0000;
+    text-shadow: 0px 0px 15px #ff0000;
     transition: transform .2s ease;
 }
 
@@ -58,16 +58,20 @@ nav h1:hover {
     display: flex;
     justify-content: center;
     margin: auto;
+    padding-top: 10px;
     background: rgba(36, 36, 36, 0.5);
     border-radius: 10vh;
     min-height: 40vh;
     width: 60vh;
-    box-shadow: 0px 2px 20px;
+    box-shadow: 0px 5px 50px;
     backdrop-filter: blur(2rem);
 }
 
 .info h1  {
-    height: fit-content
+text-shadow: 1px 1px 25px #ffffff;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
 }
 
 /* animations */
