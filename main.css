@@ -68,10 +68,15 @@ nav h1:hover {
 }
 
 .info h1  {
-text-shadow: 1px 1px 25px #ffffff;
+    text-shadow: 1px 1px 25px #ffffff;
     height: fit-content;
     color: rgb(255, 255, 255);
     font-size: 120%;
+}
+
+#portfolio {
+    margin: auto;
+    background: rgb(255, 255, 255);
 }
 
 /* animations */
