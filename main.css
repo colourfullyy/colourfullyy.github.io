@@ -74,9 +74,19 @@ nav h1:hover {
     font-size: 120%;
 }
 
-#portfolio {
-    margin: auto;
-    background: rgb(255, 255, 255);
+.portfolio {
+    position: relative;
+    /* min-height: 8rem;
+    min-width: 8rem; */
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50rem;
+    z-index: 2;
+    background-color: white;
+    backdrop-filter: blur(2rem);
+    overflow: hidden;
+    align-self: flex-end;
+    align-self: center;
 }
 
 /* animations */
@@ -84,8 +94,8 @@ nav h1:hover {
 .scaleUp {
     -webkit-animation-name: scaleUp;
     animation-name: scaleUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
@@ -96,20 +106,15 @@ nav h1:hover {
       /* -webkit-transform: translate3d(-100%, 0, 0);
       transform: translate3d(-100%, 0, 0); */
     }
+
+    25% {
+        transform: scale(0);
+    }
+
     100% {
         transform: scale(1);
         -webkit-transform: none;
         transform: none;
-    }
-}
-
-@keyframes scale {
-    0% {
-        transform: scale(1.0);
-    }
-
-    100% {
-        transform: scale(1.5);
     }
 }
 
