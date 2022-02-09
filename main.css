@@ -43,7 +43,7 @@ nav h1 {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    animation: hueshift 5s linear infinite;;
+    animation: hueshift 5s linear infinite;
     text-shadow: 0px 0px 15px #ff0000;
     transition: transform .2s ease;
 }
@@ -80,32 +80,40 @@ nav h1:hover {
 }
 
 .portfolio {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     height: 9rem;
     width: 9rem;
     margin: auto;
     border-radius: 50rem;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(45, 45, 45);
     backdrop-filter: blur(2rem);
 }
 
 .img {
-    display: flex;
-    margin: auto;
-    height: 50px;
-    transition: cubic-bezier(.33,1,.68,1) 0.5s;
+    margin-top: 5vh;
+    filter: drop-shadow(1px 1px 4px #878787);
 }
 
-.img:hover {
-    animation: rotate 0.8s infinite;
+.discord {
+    height: 50px;
+}
+
+.github {
+    height: 55px;
+}
+
+.scale {
+    transition: ease-out 0.2s;
+}
+
+.scale:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
 /* animations */
-
-.blur {
-    animation: blur 250ms; 
-}
 
 .scaleUp {
     -webkit-animation-name: scaleUp;
@@ -114,17 +122,6 @@ nav h1:hover {
     animation-duration: .5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
-
-  @keyframes rotate {
-      50% {
-          filter: blur(0px);
-          transform: rotateZ(370deg); 
-        }
-      100% {
-          filter: blur(0px);
-          transform: rotateZ(360deg);
-      }
   }
   
 @keyframes scaleUp {
