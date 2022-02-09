@@ -81,19 +81,24 @@ nav h1:hover {
 
 .portfolio {
     display: flex;
+    margin: auto;
     justify-content: center;
     height: 9rem;
     width: 9rem;
-    margin: auto;
     border-radius: 50rem;
     z-index: 2;
     background-color: rgb(45, 45, 45);
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(5rem);
 }
 
 .img {
-    margin-top: 5vh;
-    filter: drop-shadow(1px 1px 4px #878787);
+    transition:  transform .2s ease;
+    filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
+.img:hover {
+    filter: drop-shadow(0px 0px 20px #ffffff);
+    transform: scale(1.5);
 }
 
 .discord {
@@ -102,15 +107,6 @@ nav h1:hover {
 
 .github {
     height: 55px;
-}
-
-.scale {
-    transition: ease-out 0.2s;
-}
-
-.scale:hover {
-    transform: scale(1.5);
-    filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
 /* animations */
