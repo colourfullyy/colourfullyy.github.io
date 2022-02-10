@@ -89,6 +89,7 @@ nav h1:hover {
     z-index: 2;
     background-color: rgb(45, 45, 45);
     backdrop-filter: blur(5rem);
+    transition: ease 0.5s;
 }
 
 .img {
@@ -103,10 +104,12 @@ nav h1:hover {
 
 .discord {
     height: 50px;
+    margin-top:  42px;
 }
 
 .github {
     height: 55px;
+    margin-top:  42px;
 }
 
 /* animations */
