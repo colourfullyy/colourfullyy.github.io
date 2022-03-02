@@ -4,6 +4,7 @@
 
 body {
     background-color: rgb(75, 75, 75);
+    overflow: hidden;
     height: 90vh;
 }
 
@@ -22,6 +23,7 @@ body {
     justify-content: center;
     min-height: 100%;
     padding: 20px;
+    transition: all 400ms cubic-bezier(.33,1,.56,.29);
 }
 
 /* nav bar */
@@ -89,7 +91,6 @@ nav h1:hover {
     z-index: 2;
     background-color: rgb(45, 45, 45);
     backdrop-filter: blur(5rem);
-    transition: ease 0.5s;
 }
 
 .img {
@@ -114,69 +115,24 @@ nav h1:hover {
 
 /* animations */
 
-.bounceIn {
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-name: bounceIn;
-    animation-name: bounceIn;
-}
-
 .scaleUp {
-    -webkit-animation-name: scaleUp;
     animation-name: scaleUp;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
+    animation-duration: 1s;
     animation-fill-mode: both;
   }
-  
+
 @keyframes scaleUp {
     0% {
-      transform: scale(0);
+        transform: scale3d(0, 0, 0);
     }
-
-    25% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes hueshift {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    50% {
-        filter: hue-rotate(360deg);
-    }
-
-    100% {
-        filter: hue-rotate(0deg);
-    }
-}
-
-@keyframes bounceIn {
-    10% {
-        transform: scale3d(0.0, 0.0, 0.0);
-    }
-    20% {
-        transform: scale3d(0.0, 0.0, 0.0);
-    }
-    50% {
-        transform: scale3d(1.1, 1.1, 1.1);
+    40% {
+        transform: scale3d(0, 0, 0);
     }
     65% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    80% {
         transform: scale3d(0.9, 0.9, 0.9);
-    }
-    75% {
-        transform: scale3d(1.03, 1.03, 1.03);
-    }
-    85% {
-        transform: scale3d(0.97, 0.97, 0.97);
     }
     100% {
         transform: scale3d(1, 1, 1);
