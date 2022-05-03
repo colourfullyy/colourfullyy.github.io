@@ -61,20 +61,16 @@ nav h1:hover {
     border-radius: 10vh;
     min-height: 40vh;
     width: 60vh;
-    box-shadow: 0px 5px 50px;
     backdrop-filter: blur(2rem);
-    transform: perspective(1000px) rotateX(4deg) rotateY(-16deg) rotateZ(4deg);
+    transform: perspective(1000px) rotateX(4deg) rotateY(-16deg) rotateZ(10deg);
     box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 1);
 
     transition: transform .4s ease, box-shadow .4s ease;
 }
 
 .info:hover {
-    transform:
-      rotate3d(0,0,0,0deg);
-      /* rotate(0deg); */
-
-      box-shadow: 5px 5px 32px 0 rgba(0, 0, 0, 1);
+    transform: rotate3d(0,0,0,0deg);
+    box-shadow: 0px 5px 50px;
 }
 
 .h1 {
